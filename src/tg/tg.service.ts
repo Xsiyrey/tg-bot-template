@@ -2,6 +2,7 @@ import { CommandCollection } from '../model/collection/command/command.collectio
 import { Injectable } from '@nestjs/common';
 import { Telegraf } from 'telegraf';
 import { Context } from 'node:vm';
+
 require('dotenv').config();
 
 const bot = new Telegraf(process.env.BOT_TOKEN);
